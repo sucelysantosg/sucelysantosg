@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Forms</title>
+        <meta name="Acerca1" content="width=device-width,initial-scale=1.0" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            html{
+                height: :90%;
+                background-color: white;
+                position: fixed;
+                display: block;
+            }
+            body{
+                width: 100%;   
+            }
+
+            form{
+                margin: 0 auto;
+                width: 400px;
+                padding: 1em;
+                border: 1px solid rgb(42, 14, 118);
+                border-radius: 1em;
+            }
+            aside{
+                float: right;
+				width: 10%;
+				text-align: left;
+				height: 1000px;
+				background-color: #fafafa;
+            }
+            h2{
+                text-align: center;
+            }
+            label {
+				display: inline-block;
+				width: 200px;
+				text-align: right;
+			}
+            button {
+				margin-left: .5em;
+			}
+            select {
+				margin-left: 90px;
+	        }
+            .cabecera{
+                display: -moz-inline-box;
+            }
+
+            
+        </style>
+    </head>
+
+
+    <body>
+        <div class="cabecera">
+            <header id="cabecera">
+                <p>
+                    <div align="center">
+                        <h1 align="center">Formulario de Registro</h1>
+                    </div>
+                </p>
+            </header>
+        </div>
+        <div class="formulario">
+        <aside class="Registro">    
+            <div class="personales">
+                <td VALIGN="TOP" width="150 px">
+                    <article>
+                        <form action="my-formulario" method="post" title="Datos Personales">
+                            <h2>Datos Personales</h2>
+                            <div>
+                                <label for="identificacion">Documento de Identificacion</label>
+                                <input type="text" id="identificacion" name="identificacion"/>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="nombres"/>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="direccion">Dirección</label>
+                                <input type="text" id="direccion" name="direccion"/>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="pais">Pais</label>
+                                <input type="text" id="pais" name="pais"/>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="mail">E-Mail</label>
+                                <input type="mail" id="mail" name="mail"/>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="observaciones">Observaciones</label>
+                                <input type="text" id="observaciones" name="observaciones"/>
+                            </div>
+                        </form>
+                    </article>
+                </td>
+            </div>
+           
+        <br>
+        
+            <div class="laborales">
+                <td VALIGN="TOP" width="160 px">
+                    <article>
+                        <form action="my-formulario" method="post" title="Datos Personales">
+                            <h2>Datos Laborales</h2>
+                            <div>
+                                <label for="empresa">Empresa</label>
+                                <input type="text" id="empresa" name="empresa"/>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="sueldo">Sueldo Ordinario</label>
+                                <input type="text" id="sueldo" name="sueldo"/>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="bonificacion">Bonificacion</label>
+                                <input type="text" id="bonificacion" name="bonificacion"/>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="otrasboni">Otras Bonificaciones</label>
+                                <input type="text" id="otrasboni" name="otrasboni"/>
+                            </div>
+                        </form>
+                    </article>
+                </td>
+            </div>
+            <br>
+            <div class="button">
+                <td VALIGN="TOP" width="160 px">
+                    <input type="button" value="Enviar Datos">
+                </td>
+            </div>
+        </aside>  
+        </div>              
+    </body>
+</html>
